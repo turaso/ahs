@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1901</width>
+      <height>1031</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutTop">
+       <item>
+        <widget class="QPushButton" name="updateButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Update</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loginButton">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="logoutButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Logout</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="regDeviceButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Register a device</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="registerUserButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Register a new user</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exitButton">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Exit</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_1">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayoutMain">
+           <item>
+            <widget class="QTableView" name="tableView">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderMinimumSectionSize">
+              <number>100</number>
+             </attribute>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>300</number>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayoutMain">
+             <item>
+              <widget class="QPushButton" name="saveButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Save changed</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="shutdownAllButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Shutdown all</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="enableAllButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Enable all</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
